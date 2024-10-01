@@ -1,0 +1,10 @@
+@use "../global" as *;
+.c-navigation{
+    background-color: red;
+}
+.l-header{
+    .p-header{
+        .p-header__logo{}
+        .p-header__nav{}
+    }
+}

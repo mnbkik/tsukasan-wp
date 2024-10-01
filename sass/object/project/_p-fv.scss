@@ -1,0 +1,63 @@
+@use "../../global" as *;
+
+.p-fv {
+    max-width: rem(1400);
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+    margin-top: rem(31);
+}
+
+.p-fv__inner {
+    margin-left: rem(314);
+
+}
+
+.p-fv__text {}
+
+.p-fv__title {
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 700;
+    font-size: rem(48);
+    line-height: rem(69.5);
+    position: absolute;
+    top: rem(280);
+    left: rem(180);
+    z-index: 1;
+}
+
+.p-fv__subtitle {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: rem(24);
+    line-height: rem(30.72);
+    color: #F45f5f;
+    position: absolute;
+    top: rem(350);
+    left: rem(180);
+    z-index: 1;
+}
+
+.p-fv__copyright {
+    max-width: rem(200);
+    rotate: 90deg;
+    position: absolute;
+    top: rem(500);
+    left: rem(40);
+    z-index: 1;
+}
+
+.p-fv__copyright::before {
+    content: "";
+    display: block;
+    width: rem(40);
+    height: 1px;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 50%;
+    right: 120%;
+}
+
+
+
+

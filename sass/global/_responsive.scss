@@ -1,0 +1,23 @@
+@mixin SmartTab {
+  @media screen and (min-width:420px){
+    @content; 
+  }
+}
+
+@mixin SmallTab {
+  @media screen and (min-width:600px){
+    @content; 
+  }
+}
+
+@mixin MidTab {
+  @media screen and (min-width:768px){
+    @content; 
+  }
+}
+
+@mixin LargeTab {
+  @media screen and (min-width:1024px){
+    @content; 
+  }
+}

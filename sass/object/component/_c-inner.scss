@@ -1,0 +1,7 @@
+@use "../../global" as *;
+
+.c-inner {
+    max-width: rem(1060);
+    width: 100%;
+    margin-inline: auto;
+}

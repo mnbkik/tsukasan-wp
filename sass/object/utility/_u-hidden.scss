@@ -1,0 +1,16 @@
+@use "../../global" as *;
+
+.u-hidden-pc {
+
+	@include MidTab {
+		display: none;
+	}
+}
+
+
+.u-hidden-sp {
+
+	@include MidTab {
+		display: none;
+	}
+}
