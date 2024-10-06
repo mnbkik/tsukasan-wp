@@ -27,16 +27,25 @@ gap: rem(16);
 }
 
 .l-header__contact--link-instagram {
+max-width: 30px;
+}
 
+.l-header__contact--link-instagram {
+object-fit: cover;
 }
 
 .l-header__contact__text {
-
+width: 97.87px;
 }
 
 .l-header__contact--link-mail {
-
+max-width: 40px;
 }
+
+.l-header__contact--link-mail img {
+object-fit: cover;
+}
+
 
 .l-header__navigation {
 display: flex;

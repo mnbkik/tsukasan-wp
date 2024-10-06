@@ -3,6 +3,8 @@
 .l-footer {
     margin-inline: auto;
     line-height: rem(23.17);
+
+    margin-top: 200px;//あとで消す
 }
 
 .l-footer__inner {
@@ -34,6 +36,7 @@
 .l-footer__tel {}
 
 .l-footer__instagram {
+    width: 30px;
     margin-top: rem(16);
     margin-left: rem(55);
 }

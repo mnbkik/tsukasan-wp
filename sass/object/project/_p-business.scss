@@ -1,0 +1,133 @@
+@use "../../global" as *;
+
+.p-business {
+    background-color: var(--gray);
+    padding-block: 80px;
+
+    @include LargeTab {
+        padding-block: 160px;
+    }
+}
+
+.p-business__inner {
+
+
+
+}
+
+.p-business__containar {
+    display: flex;
+    flex-direction: column;
+    
+    @include LargeTab {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+.p-business__title-wrap {
+
+    @include LargeTab {
+    writing-mode: vertical-lr;
+    margin-top: 40px;
+}
+}
+
+.p-business__title {
+    margin-top: 5px;
+}
+
+.p-business__subtitle {
+    margin-left: 0;
+    margin-top: 10px;
+
+    @include LargeTab {
+        margin-left: 10px;
+    margin-top: 66px;
+    }
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 1px;
+        background-color: var(--red);
+        margin-right: 20px;
+        margin-bottom: 4px;
+        
+        @include LargeTab {
+            width: 1px;
+            height: 40px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.p-business__content {}
+
+.p-business__card-col3 {
+    
+    @include LargeTab {
+        display: flex;
+    gap: 25px;
+    margin-left: 42px;
+
+}}
+
+.p-business__card {
+    margin-top: 40px;
+    
+    @include LargeTab {
+        max-width: 297px;
+
+    }
+}
+
+.p-business__card-image {
+    aspect-ratio: 343/214;
+    max-width: 343px;
+
+    @include LargeTab {
+        aspect-ratio: 297/184;
+    max-width: 297px;
+    }
+}
+
+.p-business__card-image img {
+    object-fit: cover;
+}
+
+.p-business__card-text {}
+
+.p-business__card-title {
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 28.96px;
+}
+
+.p-business__card-description {
+    font-family: 'noto-sans-jp', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 18.82px;
+}
+
+.p-business__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+    @include LargeTab {
+    justify-content: right;
+    margin-top: 80px;
+    }
+}
+
+.p-business__button-text {
+    padding: 22px 86px;
+}

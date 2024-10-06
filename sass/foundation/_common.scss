@@ -2,13 +2,16 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   font-family: 'Noto Sans JP', sans-serif, 'Shippori Mincho', serif;
-  color :#1A1A1A;
 }
 
 a{
-  color: #1A1A1A;
+  color: var(--black)
+}
+
+img,a{
+  display: block;
+  width: 100%;
+  height: auto;
 }

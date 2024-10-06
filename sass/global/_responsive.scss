@@ -17,7 +17,8 @@
 }
 
 @mixin LargeTab {
-  @media screen and (min-width:1024px){
+  // @media screen and (min-width:1024px){
+  @media screen and (min-width:1160px){
     @content; 
   }
 }

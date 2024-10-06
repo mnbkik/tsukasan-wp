@@ -5,10 +5,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: rem(240);
-    height: rem(60);
+    width:240px;
+    height:60px;
     border: 1px solid #F45F5F;
     border-radius: 20px 0px 20px 0px;
+    position: relative;
 
     &:hover {
         background-color: #F45F5F;
@@ -17,3 +18,34 @@
 }
 
 
+.c-button__text::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background-color: var(--black);
+    rotate: 45deg;
+    position: absolute;
+    top: 26px;
+    left: 200px;
+}
+
+.c-button__text:hover::before{
+    background-color: #fcfcfc;
+}
+
+.c-button__text::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background-color: var(--black);
+    rotate: -45deg;
+    position: absolute;
+    top: 21px;
+    left: 200px;
+}
+
+.c-button__text:hover::after{
+    background-color: #fcfcfc;
+}
