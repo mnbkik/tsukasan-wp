@@ -1,0 +1,48 @@
+@use "../../global/" as *;
+
+
+
+.p-top-concept {
+    max-width: rem(1400);
+width: 100%;
+    margin-top: rem(140);
+    margin-inline: auto;
+}
+
+.p-top-concept__inner {
+    margin-top: rem(140);
+    padding-bottom: rem(200)
+}
+
+.p-top-concept__content {
+    // display: flex;
+}
+
+
+.p-top-concept__image {
+    aspect-ratio: 511/361;
+    max-width: rem(511);
+}
+
+.p-top-concept__image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-top-concept__text {
+    padding-right: rem(60);
+}
+
+.p-top-concept__title {
+    font-size: rem(24);
+    line-height: calc( 35 / 24);
+}
+
+.p-top-concept__description {   margin-top: rem(40);
+    font-size: rem(16);
+    line-height: calc( 23 / 16);}
+
+.p-top-concept__button {}
+
+
+

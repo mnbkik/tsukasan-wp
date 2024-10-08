@@ -1,5 +1,12 @@
+//hamburger
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("button").addEventListener("click", function() {
+      document.querySelector(".c-hamburger").classList.toggle("is-active")
+      console.log("test")
+    });
+  })
 
-
+//swiper
 const swiper = new Swiper(".swiper", {
     loop: true, // デフォルトはfalse
     effect: "fade", // デフォルトはslide

@@ -8,17 +8,28 @@
 
     @include LargeTab {
 
-        font-size: 32px;
-        line-height: 46.34px;
-        letter-spacing: 15px;
+        font-size: rem(32);
+        font-weight: 500;
+        letter-spacing: calc( 46 / 32 * 0.1em);
+        text-indent: 0.3em;
 }
 
 }
 
-.c-subtitle {
+.c-title-en {
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: rem(13);
-    line-height: rem(16.64);
+    // line-height: rem(16.64);
     color: var(--red);
+
+    // font-size: rem(13);
+    line-height: calc( 17 / 13 );
+    // color: var(--red);
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
 }
