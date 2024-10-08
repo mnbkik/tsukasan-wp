@@ -14,7 +14,7 @@
 
 html {
   font-size: 16px;
-  background-color: red;
+
 
   // @include MidTab{
   //   font-size: calc( 1060 / 1400 * 1vw);
@@ -31,6 +31,7 @@ html {
 
 body {
   font-family: 'Noto Sans JP', sans-serif, 'Shippori Mincho', serif;
+  
 }
 
 a {
@@ -71,6 +72,9 @@ a {
 
 
 
+.c-logo img {
+  width: rem(178);
 
+}
 
 
