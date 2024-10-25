@@ -5,10 +5,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width:240px;
-    height:60px;
+    width:rem(240);
+    height:rem(60);
     border: 1px solid #F45F5F;
-    border-radius: 20px 0px 20px 0px;
+    border-radius: rem(20) 0px rem(20) 0px;
     position: relative;
 
     &:hover {
@@ -26,8 +26,8 @@
     background-color: var(--black);
     rotate: 45deg;
     position: absolute;
-    top: 26px;
-    left: 200px;
+    top: rem(26);
+    left: rem(210);
 }
 
 .c-button__text:hover::before{
@@ -42,8 +42,8 @@
     background-color: var(--black);
     rotate: -45deg;
     position: absolute;
-    top: 21px;
-    left: 200px;
+    top: rem(21);
+    left: rem(210);
 }
 
 .c-button__text:hover::after{

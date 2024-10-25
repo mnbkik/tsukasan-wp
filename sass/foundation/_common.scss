@@ -1,3 +1,5 @@
+@use "../global" as *;
+
 :root {
   --red: #F45F5F;
   --white: #FCFCFC;
@@ -16,14 +18,15 @@ html {
   font-size: 16px;
 
 
-  // @include MidTab{
-  //   font-size: calc( 1060 / 1400 * 1vw);
-  // }
+  @include MidTab{
+    font-size: calc( 1400 / 1230 * 1vw);
+  }
 
   @include OverTab {
     font-size: 16px;
   }
 }
+
 
 * {
   box-sizing: border-box;
@@ -78,3 +81,12 @@ a {
 }
 
 
+
+
+.sp-show{
+  display: block;
+
+  @include MidTab{
+    display: none;
+  }
+}
