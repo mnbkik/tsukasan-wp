@@ -21,34 +21,34 @@
 }
 
 
-// .c-button__text::before {
-//     content: "";
-//     display: inline-block;
-//     width: 1px;
-//     height: 8px;
-//     background-color: var(--black);
-//     rotate: 45deg;
-//     position: absolute;
-//     top: rem(26);
-//     left: rem(210);
+.c-button__text::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background-color: var(--black);
+    rotate: 45deg;
+    position: absolute;
+    top: rem(26);
+    left: rem(210);
 
-// }
+}
 
 .c-button__text:hover::before {
     background-color: #fcfcfc;
 }
 
-// .c-button__text::after {
-//     content: "";
-//     display: inline-block;
-//     width: 1px;
-//     height: 8px;
-//     background-color: var(--black);
-//     rotate: -45deg;
-//     position: absolute;
-//     top: rem(21);
-//     left: rem(210);
-// }
+.c-button__text::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background-color: var(--black);
+    rotate: -45deg;
+    position: absolute;
+    top: rem(21);
+    left: rem(210);
+}
 
 .c-button__text:hover::after {
     background-color: #fcfcfc;
