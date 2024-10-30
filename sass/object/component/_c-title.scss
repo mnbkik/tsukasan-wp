@@ -7,7 +7,6 @@
     line-height: 34.75px;
 
     @include LargeTab {
-
         font-size: rem(32);
         font-weight: 500;
         letter-spacing: calc( 46 / 32 * 0.1em);
@@ -20,16 +19,10 @@
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: rem(13);
-    // line-height: rem(16.64);
     color: var(--red);
-
-    // font-size: rem(13);
     line-height: calc( 17 / 13 );
-    // color: var(--red);
     text-transform: capitalize;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
-
 }
