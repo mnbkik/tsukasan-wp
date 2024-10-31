@@ -15,7 +15,7 @@
     width: 100%;
     margin-inline: auto;
     position: relative;
-    
+
     @include MidTab {
         max-width: 1400px;
         width: 100%;
@@ -108,9 +108,7 @@
 
 }
 
-.p-company__subtitle-group {
-    
-}
+.p-company__subtitle-group {}
 
 .p-company__subtitle {
     @include MidTab {
@@ -124,9 +122,9 @@
     margin-top: 10px;
 
     @include MidTab {
-     margin-top: 28px;
+        margin-top: 28px;
     }
-    
+
     &::before {
         content: "";
         display: inline-block;
@@ -142,13 +140,14 @@
     aspect-ratio: 343/212;
     max-width: 343px;
     margin-inline: auto;
-    
+
     @include MidTab {
         aspect-ratio: 650/402;
         max-width: calc(650/1400 * 100%);
         margin-top: 0;
         position: absolute;
         top: 51.5%;
+        // top: 841px;
         right: 0;
         z-index: -1;
     }
@@ -163,10 +162,10 @@
     line-height: 29.7px;
 
     @include MidTab {
-      margin-top: 50px;
-      max-width: calc(746/1060 * 100%);
-      width: 100%;
-      line-height: 30.7px;
+        margin-top: 50px;
+        max-width: calc(746/1060 * 100%);
+        width: 100%;
+        line-height: 30.7px;
     }
 }
 
@@ -178,4 +177,3 @@
         justify-content: flex-start;
     }
 }
-
