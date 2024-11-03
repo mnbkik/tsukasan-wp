@@ -102,8 +102,11 @@
     margin-top: 80px;
 
     @include MidTab {
-        margin-top: 315px;
-        padding-inline: 170px;
+        margin-top: 160px;
+        padding-top: 153.5px;
+        // padding-inline: 170px;
+        padding-inline: min(calc(170/1400 * 100%), 100%);
+        position: relative;
     }
 
 }
@@ -138,7 +141,7 @@
 .p-company__message-image {
     margin-top: 40px;
     aspect-ratio: 343/212;
-    max-width: 343px;
+    // max-width: 343px;
     margin-inline: auto;
 
     @include MidTab {
@@ -146,7 +149,8 @@
         max-width: calc(650/1400 * 100%);
         margin-top: 0;
         position: absolute;
-        top: 51.5%;
+        // top: 51.5%;
+        top: 0;
         // top: 841px;
         right: 0;
         z-index: -1;
