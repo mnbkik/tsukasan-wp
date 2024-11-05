@@ -1,0 +1,122 @@
+@use "../../global" as *;
+
+.p-wind {
+background-color: var(--white);
+}
+
+.p-wind__inner {
+padding-top: 40px;
+padding-bottom: 40px;
+max-width: 375px;
+width: 100%;
+margin-inline: auto;
+display: flex;
+flex-direction: column;
+
+@include MidTab {
+    max-width: 1060px;
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    // padding-inline: 154px;
+    padding-inline: 80px;
+    align-items: center;
+   
+}
+
+
+}
+
+.p-wind__container{
+    display: flex;
+flex-direction: column;
+
+    @include MidTab {
+        max-width:752px;
+        width: 100%;
+        // padding-top: 160px;
+        // padding-bottom: 160px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: calc(80/758 * 100%);
+    }
+}
+
+.p-wind__title {
+
+@include MidTab {
+    writing-mode: vertical-rl;
+letter-spacing: 14px;
+}
+}
+
+.p-wind__table {
+margin-top: 40px;
+max-width: 345px;
+width: 100%;
+
+@include MidTab {
+   max-width: calc(640/758 * 100%);
+   margin: 0;
+}
+
+}
+
+.p-wind__tr {
+
+}
+
+.p-wind__td--left,
+.p-wind__td--right {
+border-top: 1px solid var(--red);
+border-bottom: 1px solid var(--red);
+padding-left: calc(16/375 * 100%);
+padding-right: calc(16/375 * 100%);
+padding-top: 19.4px;
+padding-bottom: 19.3px;
+font-family: "Noto Sans JP";
+font-size :16px;
+font-weight: 400;
+line-height: normal;
+
+@include MidTab {
+    padding-left: calc(40/758 * 100%);
+    padding-right: calc(40/758 * 100%);
+    padding-top: 20px;
+padding-bottom: 20px;
+
+}
+}
+
+.p-wind__td--left {
+padding-right: 23px;
+
+@include MidTab {
+    padding-right: 41px;
+}
+}
+
+.p-wind__td--left {
+max-width:120px;
+// width: 100%;
+position: relative;
+
+@include MidTab {
+    max-width: 121px;
+}
+}
+
+.p-wind__td--right {
+    // padding-left: 40px;
+}
+
+.p-wind__td--left::after{
+content:"";
+display: inline-block;
+width: 1px;
+height: 10px;
+background-color: var(--red);
+position: absolute;
+top: 0;
+right: 0;
+} 
