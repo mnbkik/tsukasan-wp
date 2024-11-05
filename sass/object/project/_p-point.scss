@@ -15,9 +15,10 @@
     position: relative;
 
     @include MidTab {
-        max-width: 1400px;
+        // max-width: 1400px;
+        max-width: 1160px;
         width: 100%;
-        padding-inline: 0;
+        padding-inline: 50px;
         margin-inline: auto;
     }
 }
@@ -27,9 +28,10 @@
     flex-direction: column;
 
     @include MidTab {
-        max-width: 1400px;
+        max-width: 1060px;
+        width: 100%;
         flex-direction: row;
-        gap: 42px;
+        // gap: 42px;
     }
 }
 
@@ -41,7 +43,8 @@
 
     @include MidTab {
         display: block;
-        width: min(659px, 100%);
+        max-width: calc(530/1060 * 100%);
+        width: 50%;
     }
 }
 
@@ -51,7 +54,9 @@
 
     @include MidTab {
         aspect-ratio: 650/455.379;
-        width: min(650px, 100%);
+        width: calc(650/530 * 100%);
+        transform: translate(calc(170/1160 * -100%), 0);
+
     }
 }
 
@@ -67,8 +72,9 @@
         flex-direction: column-reverse;
         margin-top: 100px;
         gap: 100px;
-        width: min(701px, 100%);
+        width: 50%;
         justify-content: flex-end;
+        margin-left: 42px;
     }
 }
 
@@ -81,9 +87,9 @@
 
     @include MidTab {
         aspect-ratio: 369/258.783;
-        width: min(calc(369/701 * 100%), 100%);
+        max-width: min(calc(369/530 * 100%), 100%);
         margin-top: 0;
-        margin-right: calc(330/701 * 100%);
+        margin-right: calc(161/530 * 100%);
     }
 }
 
@@ -94,9 +100,8 @@
 
     @include MidTab {
         aspect-ratio: 375/501.518;
-        width: min(calc(375/701 * 100%), 100%);
-        margin-right: calc(169/701 * 100%);
-        margin-left: calc(157/701 * 100%);
+        max-width: calc(375/530 * 100%);
+        margin-left: calc(155/530 * 100%);
     }
 }
 
@@ -106,8 +111,6 @@
 
     @include MidTab {
         margin-top: 86px;
-        padding-left: calc(170/699 * 100%);
-        max-width: 659px;
         width: 100%;
     }
 }
@@ -122,9 +125,11 @@
 
 .p-point__subtitle {
     letter-spacing: normal;
+    font-size: 24px;
 
     @include MidTab {
         transform: translateX(-10px);
+        font-size: 32px;
     }
 }
 
