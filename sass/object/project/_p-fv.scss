@@ -102,9 +102,23 @@
 
 //swiper
 
-.swiper1-slide img {
+.swiper-body {
+    position: relative;
+}
+
+.swiper-wrapper2 {
+    gap: 20px;
+
+    @include MidTab {
+    gap: 40px;
+}
+}
+
+.swiper1-slide {
     aspect-ratio: 343/350;
-    object-fit: cover;
+    // max-width: 343px;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 77%, 50% 77%, 50% 100%, 0 100%);
 
     @include MidTab {
         aspect-ratio: 916/648;
@@ -113,26 +127,37 @@
     }
 }
 
-.swiper2-slide img,
-.swiper3-slide img {
-    aspect-ratio: 1;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-
-    @include MidTab {
-        aspect-ratio: 1;
-        width: 200px;
-        height: 200px;
-    }
+.swiper1-slide img {
+    height: 100%;
 }
 
 .swiper2-slide {
-    position: relative;
-    z-index: 3;
+    aspect-ratio: 1;
+    max-width: calc(100/120 * 100%);
+    max-height: calc(100/120 * 100%);
+    width: 100%;
 
     @include MidTab {
-        // transform: translate(200, 200);
+        aspect-ratio: 1;
+        max-width: calc(200/240 * 100%);
+        max: height calc(200/240 * 100%);
+    }
+}
 
+.swiper2-slide img {
+    height: 100%;
+}
+
+.swiper2 {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    width: 50%;
+
+    @include MidTab {
+        width:calc(400/916 * 100%);
+        bottom: 0;
+        right: calc(-160/916 * 100%);
+        z-index: 1;
     }
 }

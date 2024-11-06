@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //swiper
 const swiper1 = new Swiper(".swiper1", {
   loop: true, // デフォルトはfalse
-  effect: "fade", // デフォルトはslide
   autoplay: { // 自動再生
     delay: 3000, // 3秒後に次のスライド（初期値：3000）
     disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
@@ -18,19 +17,12 @@ const swiper1 = new Swiper(".swiper1", {
 
 const swiper2 = new Swiper(".swiper2", {
   loop: true, // デフォルトはfalse
-  effect: "fade", // デフォルトはslide
-  // slidesPerView: 2,
+  slidesPerView: 2,// 一度に表示するスライド数（初期値：1）
   autoplay: { // 自動再生
     delay: 3000, // 3秒後に次のスライド（初期値：3000）
     disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
   }
 });
 
-const swiper3 = new Swiper(".swiper3", {
-  loop: true, // デフォルトはfalse
-  effect: "fade", // デフォルトはslide
-  autoplay: { // 自動再生
-    delay: 3000, // 3秒後に次のスライド（初期値：3000）
-    disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
-  }
-});
+
+
