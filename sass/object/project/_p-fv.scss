@@ -1,6 +1,7 @@
 @use "../../global" as *;
 
 .p-fv {
+    background-color: var(--white);
     padding-top: 40px;
 }
 
@@ -95,12 +96,43 @@
 }
 
 
-.swiper-slide img {
+
+
+
+
+//swiper
+
+.swiper1-slide img {
     aspect-ratio: 343/350;
     object-fit: cover;
 
     @include MidTab {
         aspect-ratio: 916/648;
         max-width: 916px;
+        clip-path: polygon(0 0, 100% 0, 100% 63%, 74% 63%, 74% 100%, 0 100%);
+    }
+}
+
+.swiper2-slide img,
+.swiper3-slide img {
+    aspect-ratio: 1;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+    @include MidTab {
+        aspect-ratio: 1;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.swiper2-slide {
+    position: relative;
+    z-index: 3;
+
+    @include MidTab {
+        // transform: translate(200, 200);
+
     }
 }
