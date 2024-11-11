@@ -1,6 +1,7 @@
 @use "../../global" as *;
 
 .u-hidden-pc {
+	display: block;
 
 	@include MidTab {
 		display: none;
@@ -9,8 +10,9 @@
 
 
 .u-hidden-sp {
+	display: none;
 
 	@include MidTab {
-		display: none;
+		display: block;
 	}
 }

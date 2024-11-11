@@ -1,163 +1,125 @@
 @use "../../global" as *;
 
+@use "../../global" as *;
+
 .p-fv {
     background-color: var(--white);
-    padding-top: 40px;
+    padding-top: 25px;
+    padding-bottom: 100px;
+
+    @include MidTab {
+        padding: 0;
+    }
 }
 
 .p-fv__inner {
     position: relative;
-    max-width: 767px;
-    width: 100%;
-    padding-inline: 16px;
-    margin: 0;
-    margin-inline: auto;
-
 
     @include MidTab {
-        max-width: 1400px;
-        width: 100%;
-        padding-left: min(calc(314 / 1400 * 100%), 314px);
-        padding-right: 170px;
-        padding-right: min(calc(170 / 1400 * 100%), 170px);
+        padding: 0 calc(15/1150*100%);
+        max-width: min(1150px, 100%);
+        margin-inline: auto;
+    }
+}
+
+.p-fv__text-wrapper {
+    padding-top: calc(20/335*100%);
+    padding-right: calc(60/433*100%);
+    padding-bottom: calc(20/335*100%);
+    padding-left: calc(15/433*100%);
+    background-color: var(--white);
+    border-radius: 0 20px 0 0;
+    position: absolute;
+    top: calc(386/433*100%);
+    left: 0;
+    z-index: 1;
+
+    @include MidTab {
+        border-radius: 20px 0 0 0;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        padding-top: calc(16/463*100%);
+        padding-right: 50px;
+        padding-bottom: calc(16/463*100%);
+        padding-left: 50px;
+        letter-spacing: 0.25em;
     }
 }
 
 .p-fv__text {
-    max-width: 343px;
-    width: 100%;
-    margin-inline: auto;
+    font-size: calc(14/16*100%);
+    line-height: normal;
 
     @include MidTab {
-        max-width: 482px;
-        position: absolute;
-        top: calc(324 / 648 * 100%);
-        left: 170px;
-        z-index: 1;
+        font-size: 100%;
     }
 }
 
 .p-fv__title {
-    font-family: 'Shippori Mincho', serif;
-    font-size: 32px;
-    font-weight: 700;
-    margin-top: 86px;
-    min-width: 320px;
-
-    @include MidTab {
-
-        font-size: 48px;
-        line-height: 69.5px;
-        margin: 0;
-    }
-}
-
-.p-fv__subtitle {
-    font-family: "Lora", serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 100%;
     line-height: normal;
-    color: #F45f5f;
-    margin-top: 17px;
+    margin-top: calc(15/433*100%);
 
     @include MidTab {
-        font-size: calc(24 / 16 * 100%);
-        line-height: 30.72px;
-        margin-top: 30px;
+        font-size: 150%;
     }
 }
 
-.p-fv__copyright {
-    font-size: 10px;
-    rotate: 90deg;
-    position: absolute;
-    bottom: -130px;
-    left: -34px;
+
+// swiper
+
+.swiper-2col {
+    display: flex;
+    gap: calc(6/335*100%);
 
     @include MidTab {
-        font-size: 13px;
-        max-width: 200px;
-        width: 100%;
-        bottom: 42px;
-        left: -69px;
-        z-index: 1;
+        flex-direction: row-reverse
     }
 }
 
-.p-fv__copyright::before {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 1px;
-    background-color: #1a1a1a;
-    position: absolute;
-    top: 50%;
-    right: 108%;
-}
-
-
-
-
-
-
-//swiper
-
-.swiper-body {
-    position: relative;
-}
-
-.swiper-wrapper2 {
-    gap: 20px;
-
-    @include MidTab {
-    gap: 40px;
-}
+.swiper1 {
+    max-width: min(calc(102/335*100%), 100%);
 }
 
 .swiper1-slide {
-    aspect-ratio: 343/350;
-    // max-width: 343px;
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 77%, 50% 77%, 50% 100%, 0 100%);
+    margin-top: calc(45/433*100%);
+    aspect-ratio: 102/165;
+    // width: 100%;
 
     @include MidTab {
-        aspect-ratio: 916/648;
-        max-width: 916px;
-        clip-path: polygon(0 0, 100% 0, 100% 63%, 74% 63%, 74% 100%, 0 100%);
+        margin-top: 0;
+        aspect-ratio: 310/304;
     }
 }
 
-.swiper1-slide img {
-    height: 100%;
+.swiper-set {
+    width: min(calc(227/335*100%), 100%);
 }
 
 .swiper2-slide {
-    aspect-ratio: 1;
-    max-width: calc(100/120 * 100%);
-    max-height: calc(100/120 * 100%);
-    width: 100%;
+    aspect-ratio: 227/154;
+    // width: 100%;
 
     @include MidTab {
-        aspect-ratio: 1;
-        max-width: calc(200/240 * 100%);
-        max: height calc(200/240 * 100%);
+        aspect-ratio: 769/463;
     }
 }
 
-.swiper2-slide img {
-    height: 100%;
-}
+// .swiper2-slide img {
+//     width: 100%;
+// }
 
-.swiper2 {
-    position: absolute;
-    bottom: -25px;
-    right: 0;
-    width: 50%;
+.swiper3 {
 
     @include MidTab {
-        width:calc(400/916 * 100%);
-        bottom: 0;
-        right: calc(-160/916 * 100%);
-        z-index: 1;
+        display: none;
     }
+}
+
+.swiper3-slide {
+    margin-top: calc(4/433*100%);
+    aspect-ratio: 227/154;
 }

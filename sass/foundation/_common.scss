@@ -1,16 +1,16 @@
 @use "../global" as *;
 
 :root {
-  --red: #F45F5F;
+  // --red: #F45F5F;
   --white: #FCFCFC;
-  --bg-gray: #F4F4F4;
+  // --bg-gray: #F4F4F4;
   --black: #1A1A1A;
 
-  --headerHight: 100px;
-  --inner: 15px;
+  // --headerHight: 100px;
+  // --inner: 15px;
 
   @include LargeTab {
-    --inner: 50px;
+    // --inner: 50px;
   }
 }
 
@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif, 'Shippori Mincho', serif;
+  // font-family: 'Noto Sans JP', sans-serif, 'Shippori Mincho', serif;
   
 }
 
@@ -42,7 +42,8 @@ a {
 }
 
 img,
-a {
+a,
+picture {
   display: block;
   width: 100%;
   height: auto;
@@ -50,43 +51,3 @@ a {
 
 
 
-.l-section {
-  position: relative;
-}
-
-.l-section__inner {
-  --_width: #{rem(1160)};
-  --_inner: #{rem(15)};
-
-  width: min(100%, var(--_width));
-  padding: 0 var(--_inner);
-  margin-inline: auto;
-
-  @include MidTab {
-    --_inner: #{rem(50)};
-  }
-}
-
-.l-section__inner.p-top-about__inner{
-  --_width: #{rem(1920)};
-  --_inner: 0;
-}
-
-
-
-
-.c-logo img {
-  width: rem(178);
-
-}
-
-
-
-
-.sp-show{
-  display: block;
-
-  @include MidTab{
-    display: none;
-  }
-}
