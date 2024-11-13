@@ -1,73 +1,83 @@
 @use "../global" as *;
 
 .l-header {
-width: 100%;
-max-width: rem(1400);
-margin-inline: auto;
-padding-top: 20px;
+    padding-top: 20px;
+    background-color: var(--white);
+
+    @include LargeTab {
+        padding-top: 15px;
+    }
 }
 
-
 .l-header__inner {
-    width: rem(1060);
+    max-width: 1160px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: rem(20);
+    padding-inline: 16px;
+    margin-inline: auto;
+
+    @include LargeTab {
+        padding-inline: 50px;
+    }
 }
 
-.l-header__wrap {
-max-width: rem(550);
-width: 100%;
+.l-header__logo {
+    width: min(100%, 110px);
+
+    @include LargeTab {
+        width: min(100%, 178px);
+        padding-top: 20px;
+    }
 }
 
-.l-header__contact {
-display: flex;
-align-items: center;
-justify-content: right;
-gap: rem(16);
+.l-header__buttons {
+    display: grid;
+    grid-template-columns: repeat(3, fit-content(100%)); //3つの列があり、それぞれの列の幅がその内容に基づいて最大幅100%にフィット
+    // gap: 18px;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include LargeTab {
+        gap: 16px;
+    }
 }
 
-.l-header__contact--link-instagram {
-max-width: 30px;
+.l-header__lists {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 6px;
 }
 
-.l-header__contact--link-instagram {
-object-fit: cover;
+.l-header__list {
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &:first-child {
+        margin-right: 37px;
+    }
 }
 
-.l-header__contact__text {
-width: 97.87px;
+.l-header__list-image {
+    width: min(100%, 28.68px);
 }
 
-.l-header__contact--link-mail {
-max-width: 40px;
+.l-header__link--instagram {
+    width: 30px;
 }
 
-.l-header__contact--link-mail img {
-object-fit: cover;
+.l-header__link--mail {
+    width: 40px;
 }
 
+.l-header__nav{
+    display: none;
 
-.l-header__navigation {
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-top: rem(6);
+    @include LargeTab {
+        display: block;
+    }
 }
-
-.l-header__navigation--item {
-
-}
-
-.l-header__navigation--link--home {
-
-}
-
-.l-header__navigation--text {
-
-}
-
-
-
-

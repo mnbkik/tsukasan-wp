@@ -24,48 +24,96 @@
 </head>
 
 <body>
-  <!-- <header class="l-header">
-    <div class="c-inner l-header__inner">
-      <div class="c-logo">
-        <img src="./images/logo 1.png" class="c-logo__image" width="174" height="64" alt="つかさんのロゴ" loading="lazy">
-      </div>
-      <nav class="l-header__wrap">
-        <div class="l-header__contact">
-          <a href="#" class="l-header__contact--link-instagram">
-            <img src="./images/icon-Instagram.png" alt="インスタグラムアイコン" width="30" height="30" loading="lazy">
+  <header class="l-header">
+    <div class=" l-header__inner">
+      <h1 class="l-header__logo">
+        <a href="#"><img src="./images/logo 1.png" alt="つかさんのロゴ"></a>
+      </h1>
+      <div class="l-header__block">
+        <div class="l-header__buttons">
+          <a href="#" class="l-header__link l-header__link--instagram">
+            <img src="./images/icon-Instagram.png" alt="インスタグラムアイコン">
           </a>
-          <a href="#" class="l-header__contact__text">お問い合わせ</a>
-          <a href="#" class="l-header__contact--link-mail">
-            <img src="./images/icon-mail.png" alt="メールアイコン" width="40" height="40" loading="lazy">
+          <a href="#" class="l-header__link u-hidden-sp">お問い合わせ</a>
+          <a href="#" class="l-header__link l-header__link--mail u-hidden-sp">
+            <img src="./images/icon-mail.png" alt="メールアイコン">
           </a>
+          <!-- hamburger -->
+          <button class="c-hamburger" id="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
         </div>
-        <ul class="l-header__navigation">
-          <li class="l-header__navigation--item">
-            <a href="#" class="l-header__navigation--link--home">
-              <img src="./images/icon-home.png" alt="ホームアイコン" width="28" height="20" loading="lazy">
-            </a>
-          </li>
-          <li class="l-header__navigation--text"><a href="#">事業案内</a></li>
-          <li class="l-header__navigation--text"><a href="#">会社案内</a></li>
-          <li class="l-header__navigation--text"><a href="#">施工事例</a></li>
-          <li class="l-header__navigation--text"><a href="#">スタッフ紹介</a></li>
-          <li class="l-header__navigation--text"><a href="#">お知らせ</a></li>
-        </ul>
-      </nav>
+
+        <nav class="l-header__nav">
+          <ul class="l-header__lists">
+            <li class="l-header__list l-header__list-image">
+              <a href="#" class="l-header__list--home">
+                <img src="./images/icon-home.png" alt="ホームアイコン">
+              </a>
+            </li>
+            <li class="l-header__list"><a href="#">事業案内</a></li>
+            <li class="l-header__list"><a href="#">会社案内</a></li>
+            <li class="l-header__list"><a href="#">施工事例</a></li>
+            <li class="l-header__list"><a href="#">スタッフ紹介</a></li>
+            <li class="l-header__list"><a href="#">お知らせ</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </header> -->
+
+    <!-- drawer-menu -->
+    <div class="c-drawer js-drawer u-hidden-pc">
+      <hr class="c-line">
+
+      <div class="c-drawer-inner c-inner">
+
+
+        <div class="c-drawer__nav">
+          <ul class="c-drawer__list">
+            <li class="c-drawer__item">
+              <a href="" class="c-drawer__link">home</a>
+            </li>
+            <li class="c-drawer__item">
+              <a href="" class="c-drawer__link">事業案内</a>
+            </li>
+            <li class="c-drawer__item">
+              <a href="" class="c-drawer__link">会社案内</a>
+            </li>
+            <li class="c-drawer__item">
+              <a href="" class="c-drawer__link">施工事例</a>
+            </li>
+            <li class="c-drawer__item">
+              <a href="" class="c-drawer__link">スタッフ紹介</a>
+            </li>
+            <li class="c-drawer__item">
+              <a href="" class="c-drawer__link">お知らせ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="c-drawer__icons">
+          <div class="c-drawer__icon">
+            <a href="#"><img src="./images//icon-tel.png" alt="tel"></a>
+          </div>
+
+          <div class="c-drawer__icon">
+            <a href="#"><img src="./images//icon-mail.png" alt="mail"></a>
+          </div>
+        </div>
+
+      </div>
+      <hr class="c-line">
+    </div>
+  </header>
 
   <main>
 
-
-
-
-
-    <section class="p-fv">
+    <!-- <section class="p-fv">
       <div class="c-inner p-fv__inner">
-
-
-<div class="swiper-body">
+        <div class="swiper-body">
           <div class="swiper swiper1">
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper1-slide">
@@ -79,27 +127,20 @@
               </div>
             </div>
           </div>
-  
-  
-          
-            <div class="swiper swiper2">
-              <div class="swiper-wrapper swiper-wrapper2">
-                <div class="swiper-slide swiper2-slide">
-                  <img  src="./images/FV-2.png" alt="FV" />
-                </div>
-                <div class="swiper-slide swiper2-slide">
-                  <img  src="./images/FV-3.png" alt="FV" />
-                </div>
-                <div class="swiper-slide swiper2-slide">
-                  <img  src="./images/FV-1.png" alt="FV" />
-                </div>
+          <div class="swiper swiper2">
+            <div class="swiper-wrapper swiper-wrapper2">
+              <div class="swiper-slide swiper2-slide">
+                <img src="./images/FV-2.png" alt="FV" />
+              </div>
+              <div class="swiper-slide swiper2-slide">
+                <img src="./images/FV-3.png" alt="FV" />
+              </div>
+              <div class="swiper-slide swiper2-slide">
+                <img src="./images/FV-1.png" alt="FV" />
               </div>
             </div>
-</div>
-
-
-        
-
+          </div>
+        </div>
         <div>
           <hgroup class="p-fv__text">
             <h1 class="p-fv__title">木の温かみとくらす。</h1>
@@ -108,11 +149,7 @@
         </div>
         <small class="p-fv__copyright">©️2023-株式会社つかさん</small>
       </div>
-    </section>
-
-
-
-
+    </section> -->
 
 
     <!-- コンセプト -->
@@ -137,6 +174,7 @@
         </div>
       </div>
     </section> -->
+
 
 
 
@@ -329,8 +367,6 @@
         </div>
       </div>
     </section> -->
-
-
 
 
 

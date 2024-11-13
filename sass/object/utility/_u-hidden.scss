@@ -1,16 +1,18 @@
 @use "../../global" as *;
 
 .u-hidden-pc {
+	display: block;
 
-	@include MidTab {
+	@include LargeTab {
 		display: none;
 	}
 }
 
 
 .u-hidden-sp {
+	display: none;
 
-	@include MidTab {
-		display: none;
+	@include LargeTab {
+		display: block;
 	}
 }

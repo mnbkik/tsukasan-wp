@@ -3,6 +3,11 @@
 .p-fv {
     background-color: var(--white);
     padding-top: 40px;
+    overflow: hidden;
+
+    @include MidTab {
+        padding-top: 30px;
+    }
 }
 
 .p-fv__inner {
@@ -24,7 +29,7 @@
 }
 
 .p-fv__text {
-    max-width: 343px;
+    max-width: calc(320/343 * 100%);
     width: 100%;
     margin-inline: auto;
 
@@ -32,17 +37,19 @@
         max-width: 482px;
         position: absolute;
         top: calc(324 / 648 * 100%);
-        left: 170px;
+        // left: 170px;
+        left: calc(170 / 1400 * 100%);
         z-index: 1;
     }
 }
 
 .p-fv__title {
     font-family: 'Shippori Mincho', serif;
-    font-size: 32px;
+    font-size: calc(32/16 * 100%);
     font-weight: 700;
     margin-top: 86px;
-    min-width: 320px;
+    min-width: calc(320 / 343 * 100%);
+    width: 100%;
 
     @include MidTab {
 
@@ -102,62 +109,100 @@
 
 //swiper
 
+
+
 .swiper-body {
     position: relative;
 }
 
 .swiper-wrapper2 {
-    gap: 20px;
+    width: calc(100/343 * 100%);
 
     @include MidTab {
-    gap: 40px;
+        width: calc(240/916 * 100%);
+    }
 }
-}
+
+
 
 .swiper1-slide {
     aspect-ratio: 343/350;
     // max-width: 343px;
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 77%, 50% 77%, 50% 100%, 0 100%);
+    // width: 100%;
+
 
     @include MidTab {
         aspect-ratio: 916/648;
         max-width: 916px;
-        clip-path: polygon(0 0, 100% 0, 100% 63%, 74% 63%, 74% 100%, 0 100%);
     }
 }
 
 .swiper1-slide img {
-    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+
+@include MidTab {
+    aspect-ratio:916/648;
+
+    // height: 100%;
+}
 }
 
 .swiper2-slide {
-    aspect-ratio: 1;
-    max-width: calc(100/120 * 100%);
-    max-height: calc(100/120 * 100%);
-    width: 100%;
+
+    // aspect-ratio: 1;
+    // max-width: calc(100/120 * 100%);
+    // max-height: calc(100/120 * 100%);
+    // width: 100%;
 
     @include MidTab {
-        aspect-ratio: 1;
-        max-width: calc(200/240 * 100%);
-        max: height calc(200/240 * 100%);
+        // aspect-ratio: 1;
+        // max-width: calc(200/240 * 100%);
+        // max: height calc(200/240 * 100%);
     }
 }
 
 .swiper2-slide img {
-    height: 100%;
+    // height: 100%;
+    aspect-ratio: 1;
+
+    // width: 100px;
+    // height: auto;
+    // object-fit: cover;
 }
 
 .swiper2 {
+    background-color: var(--white);
+    width: calc(240/350 * 100%);
     position: absolute;
-    bottom: -25px;
-    right: 0;
-    width: 50%;
+    bottom: -32px;
+    right: calc(-60/343 * 100%);
 
     @include MidTab {
-        width:calc(400/916 * 100%);
+        width: 50%;
         bottom: 0;
-        right: calc(-160/916 * 100%);
+        right: calc(-265/1060 * 100%);
         z-index: 1;
     }
+}
+
+
+
+.swiper2 {
+
+    // padding-top: calc(20/343 * 100%);
+    padding-top: 20px;
+    // padding-left: calc(20/343 * 100%);
+    padding-left: 20px;
+    // padding-right: calc(20/343 * 100%);
+
+    @include MidTab {
+
+        // padding-top: calc(40/916 * 100%);
+        // padding-left: calc(40/916 * 100%);
+        // padding-right: calc(40/916 * 100%);
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+
 }
