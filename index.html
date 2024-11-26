@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
@@ -16,7 +15,6 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
   <link rel="stylesheet" href="./style.css">
@@ -44,9 +42,7 @@
             <span></span>
             <span></span>
           </button>
-
         </div>
-
         <nav class="l-header__nav">
           <ul class="l-header__lists">
             <li class="l-header__list l-header__list-image">
@@ -54,64 +50,56 @@
                 <img src="./images/icon-home.png" alt="ホームアイコン">
               </a>
             </li>
-            <li class="l-header__list"><a href="#">事業案内</a></li>
-            <li class="l-header__list"><a href="#">会社案内</a></li>
-            <li class="l-header__list"><a href="#">施工事例</a></li>
-            <li class="l-header__list"><a href="#">スタッフ紹介</a></li>
+            <li class="l-header__list"><a href="#concept">事業案内</a></li>
+            <li class="l-header__list"><a href="#message">会社案内</a></li>
+            <li class="l-header__list"><a href="#point">施工事例</a></li>
+            <li class="l-header__list"><a href="about.html#wind">スタッフ紹介</a></li>
             <li class="l-header__list"><a href="#">お知らせ</a></li>
           </ul>
         </nav>
       </div>
     </div>
-
     <!-- drawer-menu -->
     <div class="c-drawer js-drawer u-hidden-pc">
       <hr class="c-line">
-
       <div class="c-drawer-inner c-inner">
-
-
         <div class="c-drawer__nav">
-          <ul class="c-drawer__list">
-            <li class="c-drawer__item">
+          <ul class="c-drawer__lists">
+            <li class="c-drawer__list">
               <a href="" class="c-drawer__link">home</a>
             </li>
-            <li class="c-drawer__item">
+            <li class="c-drawer__list">
               <a href="" class="c-drawer__link">事業案内</a>
             </li>
-            <li class="c-drawer__item">
+            <li class="c-drawer__list">
               <a href="" class="c-drawer__link">会社案内</a>
             </li>
-            <li class="c-drawer__item">
+            <li class="c-drawer__list">
               <a href="" class="c-drawer__link">施工事例</a>
             </li>
-            <li class="c-drawer__item">
+            <li class="c-drawer__list">
               <a href="" class="c-drawer__link">スタッフ紹介</a>
             </li>
-            <li class="c-drawer__item">
+            <li class="c-drawer__list">
               <a href="" class="c-drawer__link">お知らせ</a>
             </li>
           </ul>
         </div>
-
         <div class="c-drawer__icons">
           <div class="c-drawer__icon">
             <a href="#"><img src="./images//icon-tel.png" alt="tel"></a>
           </div>
-
           <div class="c-drawer__icon">
             <a href="#"><img src="./images//icon-mail.png" alt="mail"></a>
           </div>
         </div>
-
       </div>
       <hr class="c-line">
     </div>
   </header>
 
   <main>
-
-    <!-- <section class="p-fv">
+    <section class="p-fv">
       <div class="c-inner p-fv__inner">
         <div class="swiper-body">
           <div class="swiper swiper1">
@@ -149,11 +137,10 @@
         </div>
         <small class="p-fv__copyright">©️2023-株式会社つかさん</small>
       </div>
-    </section> -->
-
+    </section>
 
     <!-- コンセプト -->
-    <!-- <section class="l-section p-top-concept">
+    <section id="concept" class="l-section p-top-concept">
       <div class="l-section__inner p-top-concept__inner">
         <figure class="p-top-concept__image">
           <img width="511" height="361" src="./images/concept.png" alt="木と紙で作られた温かい雰囲気の部屋" loading="lazy">
@@ -169,18 +156,11 @@
             </p>
           </div>
           <div class="c-button p-top-concept__button">
-            <a class="c-button__text" href="">こだわりを見る</a>
+            <a class="c-button__text" href="#concept">こだわりを見る</a>
           </div>
         </div>
       </div>
-    </section> -->
-
-
-
-
-
-
-
+    </section>
 
     <!-- <section class="p-concept">
       <div class="p-concept__inner">
@@ -251,7 +231,7 @@
 
 
     <!-- 代表挨拶 -->
-    <!-- <section class="l-section p-top-message">
+    <section id="message" class="l-section p-top-message">
       <div class="l-section__inner p-top-message__inner">
         <picture class="p-top-message__image">
           <source media="(min-width: 768px)" srcset="./images/top-message-pc.jpg">
@@ -261,11 +241,11 @@
           <p class="p-top-message__description">品質と革新を大切にし、建築の限界を超えたソ<br
               class="sp-show">リューションを提供します。安全と環境にも配慮し、持続可能な未来を築くお手伝いをいたします。信頼と品質で、あなたのビジョンを建築物に形にします。</p>
           <div class="c-button p-top-message__button">
-            <a class="c-button__text" href="">代表挨拶</a>
+            <a class="c-button__text" href="#message">代表挨拶</a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- 会社案内 -->
     <!-- <section class="l-section p-company">
@@ -300,7 +280,7 @@
 
 
     <!-- 施工ポイント -->
-    <!-- <section class="l-section p-point">
+    <section id="point" class="l-section p-point">
       <div class="l-section__inner p-point__inner">
         <div class="p-point__container">
           <div class="p-point__figure-container">
@@ -330,11 +310,11 @@
           </div>
         </div>
         <div class="c-button p-point__button">
-          <a class="c-button__text p-point__button-text" href="">一覧へ戻る</a>
+          <a class="c-button__text p-point__button-text" href="#point">一覧へ戻る</a>
         </div>
         <div class="p-point__line"></div>
       </div>
-    </section> -->
+    </section>
 
 
     <!-- 風が通る住まい -->
@@ -367,8 +347,6 @@
         </div>
       </div>
     </section> -->
-
-
 
 
     <!-- <div class="c-button">
