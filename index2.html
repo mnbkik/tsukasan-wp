@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="tab-container">
+        <div class="tab-title">
+            <ul class="tab-title__items">
+                <li class="tab-title__item tab-title__item--pink" data-target="#content1">タブ1</li>
+                <li class="tab-title__item tab-title__item--lighltblue" data-target="#content2">タブ2</li>
+                <li class="tab-title__item tab-title__item--yellow" data-target="#content3">タブ3</li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <ul class="tab-content__items">
+                <li id="content1" class="tab-content__item tab-content__item--pink is-active">①テキストテキストテキストテキストテキストテキストテキスト
+                </li>
+                <li id="content2" class="tab-content__item tab-content__item--lighltblue">②テキストテキストテキストテキストテキストテキストテキスト</li>
+                <li id="content3" class="tab-content__item tab-content__item--yellow">③テキストテキストテキストテキストテキストテキストテキスト</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--
+タブ作成の手順
+① htmlでタブのタイトル部分を作る
+② htmlでコンテンツ部分を作る
+③ htmlでタイトル部分に data-target を指定する。
+④ htmlでコンテンツ部分に 対応する id を指定する。
+⑤ cssでタイトルを横並びにする
+④ cssでコンテンツを重ねる
+⑤ cssでコンテンツ部分の１枚目には is-active を付けて表示し、2枚目と３枚目はdisplay:none;で消しておく
+⑥ JavaScriptでdocument.querySelectorAllを使ってタイトル部分のクラスを取っきて定数に代入する
+⑦ コンテンツ部分のクラスも取ってきて、それを定数に代入する
+⑧ タイトル部分のクラスをforEachでまわす
+⑨ タイトル部分がクリックされたら現在コンテンツ部分についているis-activeを消す
+⑩ タイトルの data-target 属性の値を取って、定数に代入する
+⑪ data-target 属性の値があれば、対応するコンテンツにis-activeを付ける
+-->

@@ -99,7 +99,7 @@ questions.forEach(function (question) {
 document.addEventListener('DOMContentLoaded', function () {
   const headerHeight = document.querySelector('.l-header').getBoundingClientRect().height;
   const urlHash = window.location.hash;
-
+  // console.log(window.location.pathname);
   if (urlHash) {
     window.history.replaceState(null, '', window.location.pathname);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -133,16 +133,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+//tab
+  const tabTitles = document.querySelectorAll('.tab-title__item');
+  const tabContents = document.querySelectorAll('.tab-content__item');
+  tabTitles.forEach(function (title) {
+    title.addEventListener('click', function () {
+      tabContents.forEach(function (content) {
+        content.classList.remove('is-active');
+      });
+      const target = document.querySelector(title.getAttribute('data-target'));
+      if (target) {
+        target.classList.add('is-active');
+      }
+    });
+  });
 
-
-
-
-
-
-
-
-
-
+// .tab-title__item クラスを持つすべての要素を取得し、tabTitlesという変数に格納
+// .tab-content__item クラスを持つすべての要素を取得し、tabContentsという変数に格納
+// すべてのタブタイトル（tabTitles）を1つ1つ繰り返し処理し、それぞれのタブタイトルはtitleという変数に格納
+// 各タブタイトルにクリックイベントを追加。タブがクリックされると、指定された関数が実行される
+// すべてのタブコンテンツ（tabContents）を1つ1つ繰り返し処理し、それぞれのタブコンテンツはcontentという変数に格納
+// 現在アクティブな（表示されている）タブコンテンツからis-activeクラスを削除
+// クリックされたタブタイトルのdata-target属性を取得し、その値を使って対応するタブコンテンツを取得
+// 対応するタブコンテンツ（target）が存在する場合、そのタブコンテンツにis-activeクラスを追加
 
 
 

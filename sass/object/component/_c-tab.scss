@@ -1,0 +1,45 @@
+@use "../../global" as *;
+
+.tab-container {
+    padding: 80px;
+}
+
+.tab-title__items {
+    display: flex;
+}
+
+.tab-title__item {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--bg-gray);
+    cursor: pointer;
+}
+
+.tab-content__item {
+    display: none;
+}
+
+.tab-content__item.is-active {
+    display: block;
+    width: 600px;
+    padding: 50px;
+    border: solid 1px var(--bg-gray);
+}
+
+.tab-content__item--pink,
+.tab-title__item--pink {
+    background-color: pink;
+}
+
+.tab-content__item--lighltblue,
+.tab-title__item--lighltblue {
+    background-color: lightblue;
+}
+
+.tab-content__item--yellow,
+.tab-title__item--yellow {
+    background-color: yellow;
+}

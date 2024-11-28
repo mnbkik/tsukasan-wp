@@ -1,21 +1,32 @@
 @use "../global" as *;
 
 .l-footer {
-    margin-inline: auto;
-    line-height: rem(23.17);
-padding: rem(80) 0;
+    // line-height: rem(23.17);
+    padding-bottom: rem(80);
+
+    @include MidTab {}
 }
 
-.l-footer__inner {
-    width: rem(1060);
+.c-inner.l-footer__inner {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin-inline: auto;
+
+    @include MidTab {
+        // width: rem(1060);
+        // padding: rem(80) rem(170);
+        // padding: rem(170) 0;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
-.l-footer__info {}
+.l-footer__info {
+    width: min(100%, rem(375));
+}
 
 .l-footer__company {
-    width: rem(715);
+    // width: rem(715);
     font-family: 'Shippori Mincho', serif;
     font-weight: 400;
     font-size: rem(32);
@@ -24,7 +35,7 @@ padding: rem(80) 0;
 
 .l-footer__address {
     margin-top: rem(42);
-
+    font-style: normal;
 }
 
 .l-footer__contact {
@@ -48,12 +59,19 @@ padding: rem(80) 0;
 
 .l-footer__nav {
     display: flex;
-    margin-top: rem(-16);
+    margin-top: rem(42);
+    ;
 }
 
 .l-footer-nav__items--left {
     width: rem(64);
-    margin: 0 rem(39) rem(20) rem(40);
+    margin: 0 rem(20) rem(20) rem(20);
+// padding:  0 rem(39) rem(20) rem(40);
+
+    @include MidTab {
+        
+        margin: 0 rem(39) rem(20) rem(40);
+    }
 }
 
 .l-footer-nav__items--right {
@@ -66,4 +84,3 @@ padding: rem(80) 0;
 
 }
 
-.l-footer-nav__link {}

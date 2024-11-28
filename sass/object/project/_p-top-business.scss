@@ -1,26 +1,41 @@
 @use "../../global" as *;
 
-
 .p-top-business {
     padding: rem(160) 0;
     background-color: var(--bg_grey);
 }
 
-.p-top-business__button {
-    margin-top: rem(80);
-    display: block;
+.p-top-buisness__button {
+    margin-top: 76px;
+    padding-left: 15px;
+    max-width: 255px;
+    width: 100%;
+    margin-inline: auto;
+
+
+    @include MidTab {
+        margin-top: 40px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: 0
+    }
 }
 
-.p-top-business__title {
-    writing-mode: vertical-rl;
-    width: fit-content;
-    height: fit-content;
 
-    h2 {
-        font-size: rem(32);
-        font-weight: 500;
-        letter-spacing: calc(46 / 32 * 0.1em);
-        text-indent: 0.3em;
+.p-top-business__ttl {
+
+    @include MidTab {
+
+        writing-mode: vertical-rl;
+        width: fit-content;
+        height: fit-content;
+
+        h2 {
+            font-size: rem(32);
+            font-weight: 500;
+            letter-spacing: calc(46 / 32 * 0.1em);
+            text-indent: 0.3em;
+        }
     }
 }
 
@@ -31,23 +46,44 @@
     text-transform: capitalize;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding-bottom: 9px;
     margin-left: rem(10);
 
+    @include MidTab {
+        justify-content: flex-end;
+
+    }
 
     &::before {
         content: "";
-        width: 1px;
-        height: rem(40);
         background-color: var(--red);
         display: block;
-        margin-bottom: rem(16);
+        width: rem(40);
+        height: 1px;
+
+        @include MidTab {
+            width: 1px;
+            height: rem(40);
+            margin-bottom: rem(16);
+
+        }
     }
 }
 
 .p-top-business__container {
-    display: grid;
-    grid-template-columns: rem(60) 1fr;
-    gap: rem(60);
+
+    @include MidTab {
+        display: grid;
+        grid-template-columns: rem(60) 1fr;
+        gap: rem(60);
+    }
+}
+
+.p-top-business__card__figure {
+    margin-top: 20px;
+
+    @include MidTab {
+        margin-top: 0;
+    }
 }
