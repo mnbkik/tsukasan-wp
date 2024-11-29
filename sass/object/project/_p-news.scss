@@ -1,0 +1,131 @@
+@use "../../global" as *;
+
+.p-news {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: var(--white);
+
+    @include MidTab {}
+
+    .p-news__heading {
+
+        @include MidTab {
+            display: flex;
+            gap: 70px;
+        }
+    }
+}
+
+.p-news__inner {}
+
+.p-news__heading {}
+
+.p-news__heading-image {
+    aspect-ratio: 343/153;
+
+    @include MidTab {
+        width: calc(742 / 1400* 100%);
+    }
+}
+
+.p-news__heading-image img {
+    height: 100%;
+}
+
+
+.p-news__title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.p-news__title-en {
+    justify-content: left;
+    margin-top: 26.99px;
+
+    @include MidTab {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}
+
+.p-news__title {
+    font-family: "Shippori Mincho";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    width: 96px;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 2px;
+
+    @include MidTab {
+        font-size: 40px;
+        width: 100%;
+        margin-top: 9px;
+        padding-bottom: 8px;
+        letter-spacing: normal;
+    }
+}
+
+
+
+
+.p-news__container {
+    margin-top: 85px;
+    width: min(100%, 860px);
+    margin-inline: auto;
+
+    @include MidTab {
+        margin-top: 160px;
+    }
+}
+
+
+.p-news__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #1A1A1A;
+
+    @include MidTab {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.p-news__sp-set {
+    display: flex;
+    align-items: center;
+}
+
+.p-news__date {}
+
+.p-news__label {
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #1A1A1A;
+    background: #FCFCFC;
+    padding: 5px 0;
+    width: 100px;
+    margin-left: 20px;
+
+}
+
+.p-news__blog-title {
+    margin-left: 0;
+    text-align-last: left;
+    margin-top: 20px;
+
+    @include MidTab {
+        margin-top: 0;
+        margin-left: 100px;
+        text-align: center;
+    }
+}
+
+
+.p-news__pagination {
+    margin-top: 170px;
+}

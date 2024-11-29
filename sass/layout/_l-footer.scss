@@ -3,6 +3,7 @@
 .l-footer {
     // line-height: rem(23.17);
     padding-bottom: rem(80);
+    margin-top: rem(80);
 
     @include MidTab {}
 }
@@ -60,7 +61,10 @@
 .l-footer__nav {
     display: flex;
     margin-top: rem(42);
-    ;
+
+    @include MidTab {
+        margin-top: 0;
+    }
 }
 
 .l-footer-nav__items--left {

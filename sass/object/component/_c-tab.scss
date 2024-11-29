@@ -24,7 +24,7 @@
 
 .tab-content__item.is-active {
     display: block;
-    width: 600px;
+    width: min(100%, 600px);
     padding: 50px;
     border: solid 1px var(--bg-gray);
 }

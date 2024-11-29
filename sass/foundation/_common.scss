@@ -18,7 +18,7 @@ html {
   font-size: 16px;
 
 
-  @include MidTab{
+  @include MidTab {
     // font-size: calc( 1400 / 1230 * 1vw);
   }
 
@@ -34,7 +34,7 @@ html {
 
 body {
   font-family: 'Noto Sans JP', sans-serif, 'Shippori Mincho', serif;
-  
+
 }
 
 a {
@@ -67,7 +67,7 @@ a {
   }
 }
 
-.l-section__inner.p-top-about__inner{
+.l-section__inner.p-top-about__inner {
   --_width: #{rem(1920)};
   --_inner: 0;
 }
@@ -75,14 +75,21 @@ a {
 
 
 
+.c-pagination {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.c-breadcrumb {
+  margin-top: 80px;
+}
 
 
 
-
-.sp-show{
+.sp-show {
   display: block;
 
-  @include MidTab{
+  @include MidTab {
     display: none;
   }
 }
