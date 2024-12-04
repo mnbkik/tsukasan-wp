@@ -6,15 +6,16 @@
     background-color: var(--white);
 
     @include MidTab {}
+}
 
-    .p-news__heading {
+.p-news__heading {
 
-        @include MidTab {
-            display: flex;
-            gap: 70px;
-        }
+    @include MidTab {
+        display: flex;
+        gap: 70px;
     }
 }
+
 
 .p-news__inner {}
 

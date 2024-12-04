@@ -1,0 +1,174 @@
+@use "../../global" as *;
+
+.p-single-post {
+padding-top: 30px;
+padding-bottom: 40px;
+  background-color: var(--white);
+
+    @include MidTab {
+     
+    }
+.p-single-post__heading {
+
+    @include MidTab {
+        display: flex;
+        gap: 70px;
+    }
+}
+}
+
+.p-single-post__inner {
+
+}
+
+.p-single-post__heading {
+
+}
+
+.p-single-post__heading-image{
+    aspect-ratio: 343/153;
+
+    @include MidTab {
+        width: calc(742 / 1400* 100%);
+    }
+}
+
+.p-single-post__heading-image img {
+    height: 100%;
+}
+
+.p-single-post__title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.p-single-post__title-en {
+    justify-content: left;
+    margin-top: 26.99px;
+
+    @include MidTab {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}
+
+.p-single-post__title {
+    font-family: "Shippori Mincho";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    width: 96px;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 2px;
+
+    @include MidTab {
+        font-size: 40px;
+        width: 100%;
+        margin-top: 9px;
+        padding-bottom: 8px;
+        letter-spacing: normal;
+        // padding-left: 5px;
+    }
+}
+
+.p-single-post__figure{
+    margin-top: 40px;
+     aspect-ratio: 343/201;
+
+    @include MidTab {
+        margin-top: 160px;
+        aspect-ratio: 1060/450;
+        max-width: 1060px;
+    }
+}
+
+.p-single-post__figure img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 0;
+}
+
+
+
+
+
+
+.p-single-post__line {
+    margin-top: 80px;
+
+    @include MidTab {
+        margin-top: 160px;
+    }
+}
+
+.p-single-post__sub-title {
+    color: var(--red);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.p-single-post-card__wrapper {
+    display: flex;
+    margin-top: 40px;
+}
+
+.p-single-post__container {
+    margin-top: 50px;
+
+    @include MidTab {
+        margin-top: 66px;
+    }
+}
+
+.p-single-post__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 13px;
+
+    @include MidTab {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 80px 40px;
+    }
+}
+
+.p-single-post-card__label-title{
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #1A1A1A;
+    background: #FCFCFC;
+    padding: 5px 0;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.p-single-post-card__label {
+    font-size: 13px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #1A1A1A;
+    background: #FCFCFC;
+    padding: 5px 0;
+    width: 100px;
+    margin-inline: auto;
+}
+
+.p-single-post-card__time{
+    font-size: 10px;
+
+    @include MidTab {
+        font-size: 13px;
+    }
+}
+
+.p-single-post-card__txt .p-single-post-card__p{
+    font-size: 13px;
+
+    @include MidTab {
+        font-size: 16px;
+    }
+}
+
+.p-single-post__pagination {
+    margin-top: 170px;
+}

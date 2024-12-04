@@ -1,0 +1,60 @@
+@use "../../global" as *;
+
+
+
+
+
+.p-contact__heading {
+
+    @include MidTab {
+        display: flex;
+        gap: 70px;
+    }
+}
+
+.p-contact__heading-image {
+    aspect-ratio: 343/153;
+
+    @include MidTab {
+        width: calc(742 / 1400* 100%);
+    }
+}
+
+.p-contact__heading-image img {
+    height: 100%;
+}
+
+
+.p-contact__title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.p-contact__title-en {
+    justify-content: left;
+    margin-top: 26.99px;
+
+    @include MidTab {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}
+
+.p-contact__title {
+    font-family: "Shippori Mincho";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    width: 96px;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 2px;
+
+    @include MidTab {
+        font-size: 40px;
+        width: 100%;
+        margin-top: 9px;
+        padding-bottom: 8px;
+        letter-spacing: normal;
+    }
+}

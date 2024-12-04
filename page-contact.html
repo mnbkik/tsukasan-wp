@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <div class=" l-header__inner">
+            <h1 class="l-header__logo">
+                <a href="#"><img src="./images/logo 1.png" alt="つかさんのロゴ"></a>
+            </h1>
+            <div class="l-header__block">
+                <div class="l-header__buttons">
+                    <a href="#" class="l-header__link l-header__link--instagram">
+                        <img src="./images/icon-Instagram.png" alt="インスタグラムアイコン">
+                    </a>
+                    <a href="#" class="l-header__link u-hidden-sp">お問い合わせ</a>
+                    <a href="#" class="l-header__link l-header__link--mail u-hidden-sp">
+                        <img src="./images/icon-mail.png" alt="メールアイコン">
+                    </a>
+                    <!-- hamburger -->
+                    <button class="c-hamburger" id="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <nav class="l-header__nav">
+                    <ul class="l-header__lists">
+                        <li class="l-header__list l-header__list-image">
+                            <a href="#" class="l-header__list--home">
+                                <img src="./images/icon-home.png" alt="ホームアイコン">
+                            </a>
+                        </li>
+                        <li class="l-header__list"><a href="#concept">事業案内</a></li>
+                        <li class="l-header__list"><a href="#message">会社案内</a></li>
+                        <li class="l-header__list"><a href="#point">施工事例</a></li>
+                        <li class="l-header__list"><a href="about.html#wind">スタッフ紹介</a></li>
+                        <li class="l-header__list"><a href="#">お知らせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- drawer-menu -->
+        <div class="c-drawer js-drawer u-hidden-pc">
+            <hr class="c-line">
+            <div class="c-drawer-inner c-inner">
+                <div class="c-drawer__nav">
+                    <ul class="c-drawer__lists">
+                        <li class="c-drawer__list">
+                            <a href="" class="c-drawer__link">home</a>
+                        </li>
+                        <li class="c-drawer__list">
+                            <a href="" class="c-drawer__link">事業案内</a>
+                        </li>
+                        <li class="c-drawer__list">
+                            <a href="" class="c-drawer__link">会社案内</a>
+                        </li>
+                        <li class="c-drawer__list">
+                            <a href="" class="c-drawer__link">施工事例</a>
+                        </li>
+                        <li class="c-drawer__list">
+                            <a href="" class="c-drawer__link">スタッフ紹介</a>
+                        </li>
+                        <li class="c-drawer__list">
+                            <a href="" class="c-drawer__link">お知らせ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-drawer__icons">
+                    <div class="c-drawer__icon">
+                        <a href="#"><img src="./images//icon-tel.png" alt="tel"></a>
+                    </div>
+                    <div class="c-drawer__icon">
+                        <a href="#"><img src="./images//icon-mail.png" alt="mail"></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="c-line">
+        </div>
+    </header>
+
+    <main>
+
+
+        <section id="" class="l-section p-contact">
+            <div class="l-section__inner p-contact__inner">
+
+                <div class="p-contact__heading">
+                    <figure class="p-contact__heading-image">
+                        <img src="./images/contact.png" alt="問合せ" loading="lazy">
+                    </figure>
+                    <hgroup class="p-contact__title-group">
+                        <span class="c-title-en p-contact__title-en">contact</span>
+                        <h1 class="c-title p-contact__title">お知らせ</h1>
+                    </hgroup>
+                </div>
+
+                <div class="p-contact__container">
+                    <p class="p-contact__text">弊社へのお問い合わせはメール、もしくはお電話にて承ります。<br>
+                        メールでのお問い合わせは以下のフォームをご利用ください。<br>
+                        お電話でのお問い合わせは、<br>
+                        012-345-6789（受付時間／平日8：30～17：00）<br>
+                        までお願いいたします。<br></p>
+
+                    <form action="" class="p-contact__form">
+                        <ul class="p-contact__lists">
+                            <li class="p-contact__list">
+                                <div class="p-contact__label">
+                                    <label for="name" class="p-contact__label--text">お名前</label>
+                                    <span class="p-contact__label--required">必須</span>
+                                </div>
+                                <div class="p-contact__input-group">
+                                    <input type="text" id="name" class="p-contact__input" required>
+                                    <p>例）山田　太郎</p>
+                                </div>
+                            </li>
+
+                            <li class="p-contact__list">
+                                <div class="p-contact__label">
+                                    <label for="ruby" class="p-contact__label--text">フリガナ</label>
+                                    <span class="p-contact__label--required">必須</span>
+                                </div>
+                                <div class="p-contact__input-group">
+                                    <input type="text" id="ruby" class="p-contact__input" required>
+                                    <p>例）ヤマダ　タロウ</p>
+                                </div>
+                            </li>
+
+                            <li class="p-contact__list">
+                                <div class="p-contact__label">
+                                    <label for="phone" class="p-contact__label--text">お電話番号</label>
+                                    <span class="p-contact__label--required">必須</span>
+                                </div>
+                                <div class="p-contact__input-group">
+                                    <input type="tel" id="phone" class="p-contact__input" required>
+                                    <p>例）000-0000-0000</p>
+                                </div>
+                            </li>
+
+                            <li class="p-contact__list">
+                                <div class="p-contact__label">
+                                    <label for="email" class="p-contact__label--text">メールアドレス</label>
+                                    <span class="p-contact__label--required">必須</span>
+                                </div>
+                                <div class="p-contact__input-group">
+                                    <input type="email" name="email" id="email" class="p-contact__input" required>
+                                    <p>例）tsukasan@sansan.jp</p>
+                                </div>
+                            </li>
+
+                            <li class="p-contact__list">
+                                <div class="p-contact__label">
+                                    <label for="email-confirm" class="p-contact__label--text">メールアドレス</label>
+                                    <span class="p-contact__label--required">必須</span>
+                                    <p>（確認）</p>
+                                </div>
+                                <div class="p-contact__input-group">
+                                    <input type="email" name="email-confirm" id="email-confirm" class="p-contact__input"
+                                        required>
+                                    <p>例）tsukasan@sansan.jp</p>
+                                </div>
+                            </li>
+
+                            <li class="p-contact__list">
+                                <div class="p-contact__label">
+                                    <label for="address" class="p-contact__label--text">ご住所</label>
+                                </div>
+                                <div class="p-contact__input-group">
+                                    <input type="text" id="postal-code" class="p-contact__input">
+                                    <p>例）000-0000</p>
+                                    <input type="text" id="address-detail" class="p-contact__input">
+                                    <p>例）東京都まどまど区五番街1-1-1　駅前ビル801</p>
+                                </div>
+                            </li>
+
+                            <li class="p-contact__list">
+                                <div class="p-contact__label">
+                                    <label for="contact-method" class="p-contact__label--text">ご希望のご連絡方法</label>
+                                </div>
+                                <div class="p-contact__input-group">
+                                    <input type="checkbox" id="check-phone" class="p-contact__input">
+                                    <label for="check-phone">お電話</label>
+                                    <input type="checkbox" id="check-email" class="p-contact__input">
+                                    <label for="check-email">メール</label>
+                                </div>
+                            </li>
+
+                            <li class="p-contact__list">
+                                <div class="p-contact__label">
+                                    <label for="contents" class="p-contact__label--text">お問い合わせ内容</label>
+                                    <span class="p-contact__label--required">必須</span>
+                                </div>
+                                <textarea id="contents" class="p-contact__textarea" required></textarea>
+                            </li>
+                        </ul>
+
+                        <div class="p-contact__button">
+                            <button type="submit" class="p-contact__button--submit">送信する</button>
+                        </div>
+                    </form>
+
+
+
+
+
+
+
+
+                    <div class="c-breadcrumb">
+                        <div>ホーム　━　お知らせ</div>
+                    </div>
+                    </p>
+        </section>
+
+    </main>
+
+    <footer class="l-footer">
+        <div class="c-inner l-footer__inner">
+            <div class="l-footer__info">
+                <p class="l-footer__company">株式会社つかさん</p>
+                <address class="l-footer__address">
+                    〒123-4567<br>
+                    埼玉県さいたま市さいたま1-1-1
+                </address>
+                <div class="l-footer__contact">
+                    <p class="l-footer__tel">
+                        TEL : 012-345-6789<br>
+                        FAX : 012-345-6788
+                    </p>
+                    <a href="#" class="l-footer__instagram">
+                        <img src="./images/icon-Instagram.png" width="30" height="30" alt="Instagramアイコン"
+                            loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <nav class="l-footer__nav">
+                <div class="l-footer__border"></div>
+                <ul class="l-footer-nav__items--left">
+                    <li class="l-footer-nav__item"><a href="#" class="l-footer-nav__link">TOP</a></li>
+                    <li class="l-footer-nav__item"><a href="#" class="l-footer-nav__link">事業内容</a></li>
+                    <li class="l-footer-nav__item"><a href="#" class="l-footer-nav__link">会社案内</a></li>
+                    <li class="l-footer-nav__item"><a href="#" class="l-footer-nav__link">施工事例</a></li>
+                </ul>
+                <div class="l-footer__border"></div>
+                <ul class="l-footer-nav__items--right">
+                    <li class="l-footer-nav__item"><a href="#" class="l-footer-nav__link">スタッフ紹介</a></li>
+                    <li class="l-footer-nav__item"><a href="#" class="l-footer-nav__link">お知らせ</a></li>
+                    <li class="l-footer-nav__item"><a href="#" class="l-footer-nav__link">プライバシーポリシー</a></li>
+                    <li class="l-footer-nav__item"><a href="#" class="l-footer-nav__link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

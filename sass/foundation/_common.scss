@@ -19,7 +19,7 @@ html {
 
 
   @include MidTab {
-    // font-size: calc( 1400 / 1230 * 1vw);
+    font-size: calc( 1400 / 1230 * 1vw);
   }
 
   @include OverTab {

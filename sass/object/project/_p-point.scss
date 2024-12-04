@@ -3,11 +3,11 @@
 .p-point {
     padding-top: 40px;
     background-color: var(--white);
-    padding-bottom: 80px;
+    // padding-bottom: 80px;
 
     @include MidTab {
         padding-top: 160px;
-        padding-bottom: 160px;
+        // padding-bottom: 160px;
     }
 }
 
@@ -179,8 +179,8 @@
     background-color: var(--black);
     rotate: 45deg;
     position: absolute;
-    top: 20px;
-    left: 23px;
+    top: 38%;
+    left: 10%;
 }
 
 .p-point__button-text::after {
@@ -191,6 +191,14 @@
     background-color: var(--black);
     rotate: -45deg;
     position: absolute;
-    top: 26px;
-    left: 23px;
+    top: 51%;
+    left: 10%;
+}
+
+.p-point__line{
+    margin-top: 80px;
+
+    @include MidTab {
+        margin-top: 160px;
+    }
 }
