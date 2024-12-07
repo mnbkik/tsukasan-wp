@@ -1,0 +1,123 @@
+@use "../../global" as *;
+
+
+.p-page-contact {
+margin-top: 47px;
+background-color: var(--white);
+}
+
+.p-page-contact__inner {
+
+}
+
+.p-page-contact__heading {
+
+    @include MidTab {
+        display: flex;
+        gap: 70px;
+    }
+}
+
+.p-page-contact__heading-image {
+    aspect-ratio: 343/153;
+
+    @include MidTab {
+        width: calc(742 / 1400* 100%);
+    }
+}
+
+.p-page-contact__heading-image img {
+    height: 100%;
+}
+
+
+.p-page-contact__title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+
+.p-page-contact__title-en {
+    justify-content: left;
+    margin-top: 26.99px;
+
+    @include MidTab {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}
+
+.p-page-contact__title {
+    font-family: "Shippori Mincho";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    width: fit-content;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 2px;
+
+    @include MidTab {
+        font-size: 40px;
+        width: 100%;
+        margin-top: 9px;
+        padding-bottom: 8px;
+        letter-spacing: normal;
+    }
+}
+
+
+.p-page-contact__container {
+padding-top: 44px;
+padding-inline: 16px;
+background-color: var(--bg-gray);
+}
+
+.p-page-contact__text {
+
+}
+
+.p-page-contact__form {
+
+}
+
+.p-page-contact__lists {
+
+}
+
+.p-page-contact__list {
+
+}
+
+.p-page-contact__label {
+
+}
+
+.p-page-contact__label--text {
+
+}
+
+.p-page-contact__label--required {
+
+}
+
+.p-page-contact__input-group {
+
+}
+
+.p-page-contact__input {
+
+}
+
+.p-page-contact__textarea {
+
+}
+
+.p-page-contact__button {
+
+}
+
+.p-page-contact__button--submit {
+
+}
+

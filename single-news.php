@@ -7,7 +7,7 @@
             <div class="l-section__inner p-single-news__inner">
                 <div class="p-single-news__heading">
                     <figure class="p-single-news__heading-image">
-                        <img src="./images/single-news.png" alt="お知らせ" loading="lazy">
+                        <img src="<?php echo esc_url(get_theme_file_uri("./images/single-news.png")); ?>" alt="お知らせ" loading="lazy">
                     </figure>
                     <hgroup class="p-single-news__title-group">
                         <span class="c-title-en p-single-news__title-en">news</span>
@@ -57,7 +57,7 @@
                     <ul class="p-works__cards c-cards">
                         <li class="c-card">
                             <figure class="c-card__figure p-works__card__figure">
-                                <img src="./images/work-1.png" alt="テキスト">
+                                <img src=<?php echo esc_url(get_theme_file_uri("./images/work-1.png")); ?> alt="テキスト">
                             </figure>
                             <p class="c-card__label p-works-card__label">リフォーム</p>
                             <div class="c-card__txt p-works-card__txt">
@@ -67,7 +67,8 @@
                         </li>
                         <li class="c-card">
                             <figure class="c-card__figure p-works__card__figure">
-                                <img src="./images/work-2.png" alt="テキスト">
+                            <img src=<?php echo esc_url(get_theme_file_uri("./images/work-2.png")); ?> alt="テキスト">
+
                             </figure>
                             <p class="c-card__label p-works-card__label">リフォーム</p>
                             <div class="c-card__txt p-works-card__txt">
@@ -77,7 +78,8 @@
                         </li>
                         <li class="c-card">
                             <figure class="c-card__figure p-works__card__figure">
-                                <img src="./images/work-3.png" alt="テキスト">
+                            <img src=<?php echo esc_url(get_theme_file_uri("./images/work-3.png")); ?> alt="テキスト">
+
                             </figure>
                             <p class="c-card__label p-works-card__label">リフォーム</p>
                             <div class="c-card__txt p-works-card__txt">
@@ -87,7 +89,8 @@
                         </li>
                         <li class="c-card">
                             <figure class="c-card__figure p-works__card__figure">
-                                <img src="./images/work-4.png" alt="テキスト">
+                            <img src=<?php echo esc_url(get_theme_file_uri("./images/work-4.png")); ?> alt="テキスト">
+
                             </figure>
                             <p class="c-card__label p-works-card__label">リフォーム</p>
                             <div class="c-card__txt p-works-card__txt">
