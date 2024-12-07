@@ -12,7 +12,11 @@
 .u-hidden-sp {
 	display: none;
 
+<<<<<<< HEAD
 	@include LargeTab {
+=======
+	@include MidTab {
+>>>>>>> b200a0cc6ef284a341b34371637a375501a681b8
 		display: block;
 	}
 }

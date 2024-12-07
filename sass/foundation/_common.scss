@@ -1,16 +1,16 @@
 @use "../global" as *;
 
 :root {
-  --red: #F45F5F;
+  // --red: #F45F5F;
   --white: #FCFCFC;
-  --bg-gray: #F4F4F4;
+  // --bg-gray: #F4F4F4;
   --black: #1A1A1A;
 
-  --headerHight: 100px;
-  --inner: 15px;
+  // --headerHight: 100px;
+  // --inner: 15px;
 
   @include LargeTab {
-    --inner: 50px;
+    // --inner: 50px;
   }
 }
 
@@ -33,8 +33,13 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   font-family: 'Noto Sans JP', sans-serif, 'Shippori Mincho', serif;
 
+=======
+  // font-family: 'Noto Sans JP', sans-serif, 'Shippori Mincho', serif;
+  
+>>>>>>> b200a0cc6ef284a341b34371637a375501a681b8
 }
 
 a {
@@ -42,7 +47,8 @@ a {
 }
 
 img,
-a {
+a,
+picture {
   display: block;
   width: 100%;
   height: auto;
@@ -50,6 +56,7 @@ a {
 
 
 
+<<<<<<< HEAD
 .l-section {
   position: relative;
 }
@@ -93,3 +100,5 @@ a {
     display: none;
   }
 }
+=======
+>>>>>>> b200a0cc6ef284a341b34371637a375501a681b8

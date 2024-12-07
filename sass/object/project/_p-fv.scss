@@ -1,34 +1,63 @@
 @use "../../global" as *;
 
+@use "../../global" as *;
+
 .p-fv {
     background-color: var(--white);
+<<<<<<< HEAD
     padding-top: 40px;
     overflow: hidden;
 
     @include MidTab {
         padding-top: 30px;
+=======
+    padding-top: 25px;
+    padding-bottom: 100px;
+
+    @include MidTab {
+        padding: 0;
+>>>>>>> b200a0cc6ef284a341b34371637a375501a681b8
     }
 }
 
 .p-fv__inner {
     position: relative;
-    max-width: 767px;
-    width: 100%;
-    padding-inline: 16px;
-    margin: 0;
-    margin-inline: auto;
-
 
     @include MidTab {
-        max-width: 1400px;
-        width: 100%;
-        padding-left: min(calc(314 / 1400 * 100%), 314px);
-        padding-right: 170px;
-        padding-right: min(calc(170 / 1400 * 100%), 170px);
+        padding: 0 calc(15/1150*100%);
+        max-width: min(1150px, 100%);
+        margin-inline: auto;
+    }
+}
+
+.p-fv__text-wrapper {
+    padding-top: calc(20/335*100%);
+    padding-right: calc(60/433*100%);
+    padding-bottom: calc(20/335*100%);
+    padding-left: calc(15/433*100%);
+    background-color: var(--white);
+    border-radius: 0 20px 0 0;
+    position: absolute;
+    top: calc(386/433*100%);
+    left: 0;
+    z-index: 1;
+
+    @include MidTab {
+        border-radius: 20px 0 0 0;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        padding-top: calc(16/463*100%);
+        padding-right: 50px;
+        padding-bottom: calc(16/463*100%);
+        padding-left: 50px;
+        letter-spacing: 0.25em;
     }
 }
 
 .p-fv__text {
+<<<<<<< HEAD
     max-width: calc(320/343 * 100%);
     width: 100%;
     margin-inline: auto;
@@ -40,10 +69,18 @@
         // left: 170px;
         left: calc(170 / 1400 * 100%);
         z-index: 1;
+=======
+    font-size: calc(14/16*100%);
+    line-height: normal;
+
+    @include MidTab {
+        font-size: 100%;
+>>>>>>> b200a0cc6ef284a341b34371637a375501a681b8
     }
 }
 
 .p-fv__title {
+<<<<<<< HEAD
     font-family: 'Shippori Mincho', serif;
     font-size: calc(32/16 * 100%);
     font-weight: 700;
@@ -61,36 +98,31 @@
 
 .p-fv__subtitle {
     font-family: "Lora", serif;
+=======
+>>>>>>> b200a0cc6ef284a341b34371637a375501a681b8
     font-weight: 400;
-    font-size: 16px;
+    font-size: 100%;
     line-height: normal;
-    color: #F45f5f;
-    margin-top: 17px;
+    margin-top: calc(15/433*100%);
 
     @include MidTab {
-        font-size: calc(24 / 16 * 100%);
-        line-height: 30.72px;
-        margin-top: 30px;
+        font-size: 150%;
     }
 }
 
-.p-fv__copyright {
-    font-size: 10px;
-    rotate: 90deg;
-    position: absolute;
-    bottom: -130px;
-    left: -34px;
+
+// swiper
+
+.swiper-2col {
+    display: flex;
+    gap: calc(6/335*100%);
 
     @include MidTab {
-        font-size: 13px;
-        max-width: 200px;
-        width: 100%;
-        bottom: 42px;
-        left: -69px;
-        z-index: 1;
+        flex-direction: row-reverse
     }
 }
 
+<<<<<<< HEAD
 .p-fv__copyright::before {
     content: "";
     display: block;
@@ -121,11 +153,16 @@
     @include MidTab {
         width: calc(240/916 * 100%);
     }
+=======
+.swiper1 {
+    max-width: min(calc(102/335*100%), 100%);
+>>>>>>> b200a0cc6ef284a341b34371637a375501a681b8
 }
 
 
 
 .swiper1-slide {
+<<<<<<< HEAD
     aspect-ratio: 343/350;
     // max-width: 343px;
     // width: 100%;
@@ -206,3 +243,43 @@
     }
 
 }
+=======
+    margin-top: calc(45/433*100%);
+    aspect-ratio: 102/165;
+    // width: 100%;
+
+    @include MidTab {
+        margin-top: 0;
+        aspect-ratio: 310/304;
+    }
+}
+
+.swiper-set {
+    width: min(calc(227/335*100%), 100%);
+}
+
+.swiper2-slide {
+    aspect-ratio: 227/154;
+    // width: 100%;
+
+    @include MidTab {
+        aspect-ratio: 769/463;
+    }
+}
+
+// .swiper2-slide img {
+//     width: 100%;
+// }
+
+.swiper3 {
+
+    @include MidTab {
+        display: none;
+    }
+}
+
+.swiper3-slide {
+    margin-top: calc(4/433*100%);
+    aspect-ratio: 227/154;
+}
+>>>>>>> b200a0cc6ef284a341b34371637a375501a681b8
