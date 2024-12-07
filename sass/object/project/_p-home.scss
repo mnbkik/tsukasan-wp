@@ -1,6 +1,6 @@
 @use "../../global" as *;
 
-.p-works {
+.p-home {
 padding-top: 30px;
 padding-bottom: 40px;
   background-color: var(--white);
@@ -8,7 +8,7 @@ padding-bottom: 40px;
     @include MidTab {
      
     }
-.p-works__heading {
+.p-home__heading {
 
     @include MidTab {
         display: flex;
@@ -17,15 +17,15 @@ padding-bottom: 40px;
 }
 }
 
-.p-works__inner {
+.p-home__inner {
 
 }
 
-.p-works__heading {
+.p-home__heading {
 
 }
 
-.p-works__heading-image {
+.p-home__heading-image {
     aspect-ratio: 343/153;
 
     @include MidTab {
@@ -33,18 +33,18 @@ padding-bottom: 40px;
     }
 }
 
-.p-works__heading-image img {
+.p-home__heading-image img {
     height: 100%;
 }
 
 
-.p-works__title-group {
+.p-home__title-group {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.p-works__title-en {
+.p-home__title-en {
     justify-content: left;
     margin-top: 26.99px;
 
@@ -54,7 +54,7 @@ padding-bottom: 40px;
     }
 }
 
-.p-works__title {
+.p-home__title {
     font-family: "Shippori Mincho";
     font-size: 24px;
     font-weight: 700;
@@ -76,7 +76,7 @@ padding-bottom: 40px;
 
 
 
-.p-works__container {
+.p-home__container {
 margin-top: 85px;
 
     @include MidTab {
@@ -84,7 +84,7 @@ margin-top: 85px;
     }
 }
 
-.p-works__cards {
+.p-home__cards {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 40px 13px;
@@ -96,11 +96,11 @@ gap: 40px 13px;
 }
 
 
-.p-works__card__figure {
+.p-home__card__figure {
 
 }
 
-.p-works-card__label{
+.p-home-card__label{
 text-align: center;
 border-radius: 50px;
 border: 1px solid #1A1A1A;
@@ -110,7 +110,7 @@ width: 100px;
 margin-inline: auto;
 }
 
-.p-works-card__txt{
+.p-home-card__txt{
     margin-top: 20px;
 
     @include MidTab {
@@ -119,14 +119,14 @@ margin-inline: auto;
     }
 }
 
-.p-works-card__txt .p-works-card__p{
+.p-home-card__txt .p-home-card__p{
     margin-top: 10px;
 
     @include MidTab {
         margin-top: 0;
     }
 }
-.p-works-card__p{
+.p-home-card__p{
 
 &::before{
 
@@ -143,7 +143,7 @@ margin-inline: auto;
 }
 }
 
-.p-works-card__txt time{
+.p-home-card__txt time{
     font-size: 100%;
 }
 

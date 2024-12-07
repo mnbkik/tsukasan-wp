@@ -53,7 +53,7 @@
                     <li class="l-header__list"><a href="#message">会社案内</a></li>
                     <li class="l-header__list"><a href="#point">施工事例</a></li>
                     <li class="l-header__list"><a href="about.html#wind">スタッフ紹介</a></li>
-                    <li class="l-header__list"><a href="#">お知らせ</a></li>
+                    <li class="l-header__list"><a href="">お知らせ</a></li>
                 </ul>
             </nav>
         </div>
